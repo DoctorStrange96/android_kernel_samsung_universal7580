@@ -1,11 +1,8 @@
 #!/bin/bash
-export CROSS_COMPILE=../PLATFORM/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/bin/aarch64-linux-android-
-#rm log.txt
-#make clean
-#make distclean
-#export CROSS_COMPILE=/home/tien.tq1/toolchains/aarch64/aarch64-linux-android-4.9/bin/aarch64-linux-android-
+export PATH="$HOME/Toolchains/aarch64-linux-android-4.8/bin:$PATH"
 export ARCH=arm64
+export SUBARCH=arm64
+export CROSS_COMPILE=aarch64-linux-android-
 
-make exynos7580-a5xelte_defconfig
-make -j
-#24 2>&1 | tee -a  log.txt
+make lineageos_j7elte_defconfig
+make -j9

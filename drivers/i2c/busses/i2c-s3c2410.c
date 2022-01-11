@@ -105,7 +105,7 @@ static LIST_HEAD(drvdata_list);
 #define QUIRK_FIMC_I2C		(1 << 3)
 
 /* Max time to wait for bus to become idle after a xfer (in us) */
-#define S3C2410_IDLE_TIMEOUT	5000
+#define S3C2410_IDLE_TIMEOUT	25000
 
 /* i2c controller state */
 enum s3c24xx_i2c_state {
